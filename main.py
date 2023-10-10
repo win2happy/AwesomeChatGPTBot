@@ -298,9 +298,9 @@ def handle_messages(message: callable) -> None:
 
 
 # Connect to bot
-# if __name__ == "__main__":
-print("[!] Run main.py...")
-try:
-    GPTbot.infinity_polling(skip_pending=True, none_stop=True)
-except: 
-    print("Lost connection!")
+if __name__ == "__main__":
+    print("[!] Run main.py...")
+    try:
+        GPTbot.infinity_polling(skip_pending=True, none_stop=True)
+    except: 
+        print("Lost connection!")
