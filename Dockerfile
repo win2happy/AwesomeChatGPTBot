@@ -9,4 +9,7 @@ WORKDIR /app
 COPY . .
 RUN pip install -r requirements.txt --no-cache-dir
 
-CMD ["python", "init.py", "main.py"]
+RUN chmod +x start.sh
+
+# 运行shell脚本
+CMD ["start.sh"]
